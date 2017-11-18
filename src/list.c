@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <stdio.h>
 
 #include "list.h"
 #include "node.h"
@@ -45,17 +44,4 @@ void del_list(node_t* head) {
 		tmp = NULL;
 	}
 	head = NULL;
-}
-
-/**
- * Display list.
- */
-void display(node_t* head) {
-	node_t* last;
-	while (head != NULL) {
-		printf("%d ", head->data);
-		last = head;
-		head = head->next;
-	}
-	puts(" ");
 }
