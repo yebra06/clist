@@ -5,7 +5,9 @@
 
 extern node_t* head;
 
-void append(node_t* head, int data);
+void push_back(node_t** head, int data);
+void push_front(node_t**, int data);
+void del_list(node_t* head);
 void display(node_t* head);
 
 #endif
