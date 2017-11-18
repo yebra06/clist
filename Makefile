@@ -14,8 +14,8 @@ RM      := rm $(OBJS) $(APP)
 
 all: $(APP)
 $(APP): $(OBJS)
-    $(CC) $(CFLAGS) -o $@ $^
+	$(CC) $(CFLAGS) -o $@ $^
 %.o: %.c
-    $(CC) -c $(CFLAGS) $< -o $@
+	$(CC) -c $(CFLAGS) $< -o $@
 clean:
-    $(RM)
+	$(RM)
