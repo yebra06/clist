@@ -37,6 +37,7 @@ void push_front(node_t** head, int data) {
  */
 void del_list(node_t* head) {
 	node_t* tmp;
+
 	while (head != NULL) {
 		tmp = head;
 		head = head->next;
@@ -44,5 +45,6 @@ void del_list(node_t* head) {
 			free(tmp);
 		tmp = NULL;
 	}
+
 	head = NULL;
 }

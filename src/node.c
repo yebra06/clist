@@ -2,6 +2,9 @@
 
 #include "node.h"
 
+/**
+ * Create a doubly linked list node.
+ */
 node_t* create_node(int data) {
 	node_t* new_node = (node_t*)malloc(sizeof(node_t));
 	new_node->data = data;
