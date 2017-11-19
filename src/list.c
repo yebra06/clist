@@ -40,7 +40,8 @@ void del_list(node_t* head) {
 	while (head != NULL) {
 		tmp = head;
 		head = head->next;
-		free(tmp);
+		if (tmp != NULL)
+			free(tmp);
 		tmp = NULL;
 	}
 	head = NULL;
